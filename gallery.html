@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="shortcut icon" type="image/ico" href="assets/favicon.png" >
+    <title>Gallery</title>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Photo Gallery</h2>
+        <ul>
+           <li class="category active" data-filter="all">All</li>
+            <li class="category" data-filter="Avengers">Avengers</li>
+            <li class="category" data-filter="spiderman">Spiderman</li>
+            <li class="category" data-filter="America">America</li>
+            <li class="category" data-filter="others">Others</li>
+        </ul>
+        <div class="gallery">
+
+            <div class="image Avengers">       <img src="assets/posters/The avengers 2012.jpg" alt=""></div>
+
+
+            <div class="image Avengers">       <img src="assets/posters/The avengers infinity war.jpeg" alt=""></div>
+
+
+            <div class="image Avengers">       <img src="assets/posters/the Avengers endgame.jpg" alt="img3"></div>
+
+
+            <div class="image America">       <img src="assets/posters/Civil war.jpg" alt="img3"></div>
+
+
+            <div class="image others">       <img src="assets/posters/blackwidow.jpg" alt="img4"></div>
+
+
+            <div class="image others">        <img src="assets/posters/captain marvel movieposter.jpg" alt=""></div>
+
+
+            <div class="image others">        <img src="assets/posters/deadpool poster.jpeg" alt=""></div>
+
+
+             <div class="image others">       <img src="assets/posters/Doctor_Strange poster.jpg" alt=""></div>
+
+
+            <div class="image others">        <img src="assets/posters/guardians of the galaxy.jpg" alt=""></div>
+
+
+            <div class="image others">      <img src="assets/posters/iron-man.jpg" alt=""></div>
+
+            
+            <div class="image Avengers">      <img src="assets/posters/marvelstudiosassembled.jpeg" alt=""></div>
+
+
+            <div class="image spiderman">      <img src="assets/posters/spiderman poster.jpg" alt=""></div>
+
+
+           <div class="image others">       <img src="assets/posters/loki poster.jpeg" alt=""></div>
+
+
+            <div class="image others">         <img src="assets/posters/hulk poster.jpg" alt=""></div>
+
+
+            <div class="image others">         <img src="assets/posters/falcon-poster.png" alt=""></div>
+
+
+            <div class="image others">       <img src="assets/posters/Blackpanther.jpg" alt=""></div>
+
+
+            <div class="image others">       <img src="assets/posters/hawkeye.jpg" alt=""></div>
+
+
+            <div class="image others">       <img src="assets/posters/Ant-Man.jpg" alt=""></div>
+
+            </div>
+
+                 </div>
+
+     
+        <!-- Button area -->    
+          <center>
+        <a href='index.html' target='_self'>
+            <button class="button" style="vertical-align:middle"><span>Back to Home </span></button>
+        </a>
+        </center>
+        
+
+    <!-- jquery cdn link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+
+        $(document).ready(function(){
+
+            $('.category').click(function(){
+
+                $(this).addClass('active').siblings().removeClass('active');
+
+                let filter = $(this).attr('data-filter');
+
+                if(filter == 'all'){
+                    $('.image').show(500);
+                }
+                else{
+                    $('.image').not('.'+filter).hide(400);
+                    $('.image').filter('.'+filter).show(500);
+                }
+            });
+        });
+
+    </script>
+</body>
+</html>
