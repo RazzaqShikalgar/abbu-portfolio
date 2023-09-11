@@ -1,321 +1,454 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Avengers</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>  
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
-    <link rel="shortcut icon" type="image/ico" href="assets/favicon.png" >
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shikalgar</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+  <link rel="shortcut icon" type="image/ico"
+    href="https://res.cloudinary.com/dsswjmlin/image/upload/v1694435917/portfolio%20abbu/awards/android-chrome-192x192_bkvqvs.png">
 
 </head>
+
 <body>
 
-    <div class="scroll-up-btn">
-        <i class="fas fa-angle-up"></i>
+  <div class="scroll-up-btn">
+    <i class="fas fa-angle-up"></i>
+  </div>
+  <nav class="navbar">
+    <div class="max-width">
+      <div class="logo">
+        <a href="#">
+          <img
+            src="https://res.cloudinary.com/dsswjmlin/image/upload/v1694436951/portfolio%20abbu/awards/logo_ksgl9l.png"
+            height="80px" alt="Logo" style="vertical-align: middle;"> Jugadu <span>scientist</span>
+        </a>
+      </div>
+      <ul class="menu">
+        <li><a href="#home" class="menu-btn">Home</a></li>
+        <li><a href="#about" class="menu-btn">About</a></li>
+        <li><a href="#Avengers" class="menu-btn">Achievements</a></li>
+        <li><a href="#movies" class="menu-btn">Gallery</a></li>
+        <li><a href="#contact" class="menu-btn">Contact Us</a></li>
+      </ul>
+      <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
     </div>
-    <nav class="navbar">
-        <div class="max-width">
-            <div class="logo"><a href="#">Aven<span>gers.</span></a></div>
-            <ul class="menu">
-                <li><a href="#home" class="menu-btn">Home</a></li>
-                <li><a href="#about" class="menu-btn">About</a></li>
-                <li><a href="#Avengers" class="menu-btn">Avengers</a></li>
-                <li><a href="#movies" class="menu-btn">Movies</a></li>
-                <li><a href="#contact" class="menu-btn">Contact Us</a></li>
-            </ul>
-            <div class="menu-btn">
-                <i class="fas fa-bars"></i>
-            </div>
+  </nav>
+
+
+
+  <!-- home section start -->
+  <section class="home" id="home">
+    <div class="max-width">
+      <div class="home-content">
+        <div class="text-1" style="display: flex; align-items: center; font-family: 'Baloo 2', cursive;"><img
+            src="data:image/png;base64,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">Namaskar
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAMxUlEQVR4nO1be1BU5xW/NulMO9Omj2mnk7bTfzrTzKSx7oOnoqCisvfusrwWRBF84N7v3t2FhX2xy7ILy6rAAgqCz/iCxJiYpFXTmMTm0Tya1sQkJiZNGgm+YoyvqIhGHns657ssD6tC/jC90P5mfuO9V1j2/L7zfed85zuXYf6Pbw8zUol/WqqwTckKeQaD4R58pkw1/TKaJWUxHNmq0hAtM1Gh4PgpSpbA8oIiiNMJ4WiOPBPD8nq1lvTqc8x9eXnFoGL5rxIT/fcyExGzMoSA1mCCj+rL4S+BMojVkV4lS/rLRRucXFcNH6+pAhVL+pQpxtnMRITWYOosJyVUAKSVt3XHcCT8aXMVfL6umnJhXtElJcuvYyYaHkhd+sMojoQf9zip8Z+u8cFWbwWkZpvDEeORD7tcYTXHf8n4/d9hJhIULK+P1RJ4r04a/ZPrg/BkdSUkZ4ojBDiyuhJwWqhTjAnMRILOYNq7JL9o0P3PbamB52uqIF4njBAAmZlruaTQkEZmIiEpTby62mqDZytdYF9uhUCxC9Y4PaDiCHSsrYJ1dhdYCktgh8cNrXZnWM2RkwzDTGImAv6gKfwdhr8XA2XALy6CtPlmsPJ2ULME3R0W5xfDrHQRyBIrxOtEOFRPp0FYqTFGMRMB09N5+7wMKfzNThdhW7kHutoboMHuoQLE6AR4K+SHjzAMcgK8vNKHi+MlJUtWMhMB2mzzxw6jFV4PuqnB7zQFqQD/Wl9D741LrIPzX5dtptOhqdTRH8XxR5nxjsTEgu/FaEn/I2UO2O60w9RUAS631VMBrrTVQzQnhGuKHYMCOEkpmJeVwNshOg3gDxx5iBnPUGj4OdGcAIdqPeAlVijIL6bGRzhdL/RtdJQNCrC9zA2zMkz0WpMlXlawxM+MZ7AG86N5Cy10/s/PNUNdqWuEAMkZYs8Ot3tQgH/U+enIHwr5IWS196pY/ggznjEnU/yqtsgGH9SVAyZCGPuHC8Bmmb7e7BzygFOtAZiZLkK7xw1v1PqoGJPnkQeY8YjJKYW/RgOeq3TBMz4XNebE5roRAqTlWLpbbK4RiZC41ApuUkqvkzNMV5Sc4GLGI+K0AsHR/DBUDk1WG2gMZmr0pnIvuEQH/K0xCNm5RV0NVicNfQ5jKY0Aa+1OSMsxUwGCFkePmiVvMeMRumzzO9ZlxXT+m5cWgZ3YqQAoRHpuEag5AWK1Ql96jgWitALgv9P1Iry4ooImSbg9fmVlBU2K1Frjb5jxhMRE/73xOtK7xemgAmiyTLC9wktDX6xWgAO11bA7IC14yIddZfCyZCx80lRFk6M/VZbTNSExTbiq0PDFzHiCOsWYgHn+wRoPJWZ4B9eshNNbQlIy1LySeoM+x9KVmm2mhh5ulGL/wZAPFuUVw6oiKT/wCfavlSx5jRlPmJdpajXkmuno7yxz0BG9uKMejrSuokYe21RLBTAXlnyJiQ8aerI1QKfF/oCXGo8i4PMDQS8oNXz/Q7plv2DGC+ZlimeDJqn6UyWWQH6+lRr8SqiaGhnJBkt52+miQmnFR87JMNEQiO6Poh1vCdByWYJe7FayPM+MB6i1xp/hIra3wkUFwN1erc1NDX6KFkGkaIB0EPupiAcgcxYUwepSJ10H8DNeWlFBn7tI6XUVJxxgxgOitOKihFQBjoTKaQhM0Auwd6WUAG32eCFn4VA67CK2k8KSIQFQDK9oo9cYCjEk4vWzAS8oOdL74NxlP2XkjtRs82viYqn680JlGZ3zHRukOV9nc4NQWDoogFt0nBi+G6w02SEiiFuw0aQosj7E6YTrCo4UMDLHpIRU4cZ6m50KsMFmhzmZpkGDy0QHeMzOwXuvyX68sGBIgGabCwy5FnqNa0FimkgjBN5bC0twHdjHyBkqTlBj+HtjpZsK4CKltPoTMdi4tJQWQiL3fovz2JJ8abVH7vS6YVa6tBscqAzRsIj3uDAqWdITk2K5j5ErZmeaatOypfCHzMi1wCaPd9DgzAXFtBweua+2ODvzFw0J8HzQS3OGYy3SqCdnmCCyW8RnMRy5oeTIfEauYLNMJysEKfx9GPJCrE6Av6+RKkBI3OvvCVYO3getzs6FA/F++Ki/U19J70uWl0DQYh++Ubqq1PBPMHKEOtn4Izz82F0uhb+jTf7BhAd5aUcDDW2vNQwJUlNS9tn8hUWDBuIoowdg8oP3R5sDlJH/f6LCg5/RHWco+T4jN6g4Pj0+VYD3Q57Bw4/hW9/OTXV0dD9sXTX4LGQr68heMCQAMilNhF3eoSLJcGIJPZoTevCghZEbElKF1TkD6S/y/Jah0Uceal5BBTizJTT4bI3d3ZE1sOpHiPc31wiGMzXbdEGhIUFGbpiTYV5fkCeVv5CXdgwZinyhthpj+YhnzU5PR1rOSAH4JSU0H7idADkLLOdkWTKP5ogtc/6QB+DWd7ixj1f6gTVYRjxrKSvvwN3gcAM9gg0sw9Ljm6nJNF1QsnwJIzdMSeEXzs00DXnA9pEe8H7LKnjU7xvxbKO7vIMzjBTgQLDitmsAcoZeuKzQkAWM3DAlRZiLi+DgGrB1ZP3vVtzi8X6GxZLbGXsrRnFCjyybKBQDLTCH66QocPbhmlEF2O71dqLXjNX4zpYAXUjVGuNkRm6YwvG/wi/3+gopDT6zWar63IntvopjeF44VgEON0iJknqe8X5GbngwUfxBpAyOApzesGJUAR6rrDgeyf3HwldrpLqhLBMhhmEmqTETHGiDOXVTInQr7q7yn5ihH7sH7KvCugDfy8gVU3VCz7aBSvCJ1upRBXi62n9q2jcQAKODSsNfZOSKxDSxe7NdEgDz+tEE2Lei6jQ2RYxVAOwgUbGkk5Er5mSIl1pLpWJI59qhXd/t+NyqqjMxWmHMAuD5gYol8j0wTc4wXcRjMBTgs+bRBXi+JnAuiiNjFmCdwwUqjfE9Rq6Yk2E6V19USgXoGIMAL4UCF3FVj5S9RmNTqTOs0PBvM3LF3EzxTJ1FEuBo0+gCvNoQvIwCnByjAI0ljl4lyx9k5Iq5GeL5xuIBD2jyjS5AfXU3PTYfKIGNxhYbegA5xMgV01KF65FFcCxT4OVQ8Ib6G3jAljLaaHWakSMMBsM9KpaEd7mlMNg5BgF2B3z9kZ6gsRArwwoN3x9510BWULPGWHTnmoE14ETr6HlAo919PSnN1DfWRTBgtl/FvzGF42MYuSHKwB9SpS+n7a+7PE74cgybody84rNo0AtB6QzwTtzscvUoOQLRBnJDwQpPM3JCcprJh4YkrMiGOMsiiNIS2L9qZEPUzTy3LQRqjvSqOdJVNtATdCvi6XDQYu9WsQSS6wnMa5WaKpSs0cLIAckZpgCOepyOhGMtiyCpJR2mewr7lRwJVxU7w2jorQR4MuDvU7PkKwUnGKI50o+t8jcbv7+6Athsc7daz4fR8LR9BOLzSBdrMOHrNf2qFGL9rxk+RV/8Y02W6VUsdLa5HIDdoChEUrAQ0v5MIGUjgegs0hOnF3rr7e4wdoXg2UBEAF2O5byCJWtxFzlVR07gqTC2yez2eXDEe2ZnCtdw1BOKCeieIKDfS2CaiXQlpon9H6yugqf8HojiSG80R3bhd/k2bZ8UpzcVJuiFr/EdoGf90v7/k8YKaPN6wxgJEl0kjF8YObuOQGyeQOdvlE7oS8gSrydli9eUrNCjTjH+Fj9QyZJFkX6hKD3pjy/kwzODBLQ7CRVT+yiB+AJyNSld7H+9RjorRGITlSbTdCOaEy4oNHz+XW+xj0vjY+ZmmL7Apkfs/DhM3wDxwvGWKri8Q6oCvxSqhhnpYm+8Qbgxu4aA/o+SEbrd0vydXUtwT9+v0PCrh4uq1JNDUwW+H38WieKlbKAecBXrDEsLiuDdhv+cJsfWBmBVkR29oS9WR96/qxFiql5cbFhgOfBmrW//0Sbf5x1NvhsXto48AEGe3RqCZlc5JKWLvSqOD89YJFyb6SA9MysJTDWTLgXLH5/MCT8Z/tnYGK3kSN9UnlyLKyBdai3fj1NqcX5x+Gl/+Z2jRGv19Tfr/DuTM8THFCy/jPk2cbl99QOX2+uXXmmr397VXv/pcCGwF+iv9UFocZWDTXDANL0YRte/3SipOd6M00BcWgJ7Ksvhn2uG3ii7FU+tq/7i89bqytNNK37OyAVX2xvv72pvzL7S1tB8pa3+3Stt9X0oRpvPi0fbvfjW6J1+P5YTNmMD5XPV3juMeODNU+sC89/euPG7jNxxvr3pvj1B/2Ily/fh4cloP49pbrRWWBvFkr5NzjKaBwy4+Y1TrYFHTqwPyi8LHAsUKZZv5KY4l6M50qXJMnXv8XnXH9sYlF8p/G4DF0qlhlRNmSf+/q7/MeZ/FP8GqyfoXpO3ba4AAAAASUVORK5CYII=">
         </div>
-    </nav>
-        
-       
-        <!-- home section start -->
-    <section class="home" id="home">
-        <div class="max-width">
-            <div class="home-content">
-                <div class="text-1">Hello, We Are</div>
-                <br>
-                <div class="text-2">Avengers</div>
-                <br>
-                <div class="text-3">And Our Names <span class="typing"></span></div>
-                <a href="https://www.britannica.com/topic/the-Avengers-superhero-team" target=" ">Know More</a>
-            </div>
+        <br>
+        <div class="text-2">Myself Ayub Shikalgar</div>
+        <br>
+        <div class="text-3"> I'm A <span class="typing"></span></div>
+        <a href="https://www.britannica.com/topic/the-Avengers-superhero-team" target=" ">Know More</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- about section start -->
+  <section class="about" id="about">
+    <div class="max-width">
+      <h2 class="title">About</h2>
+      <div class="about-content">
+        <div class="column left">
+          <img
+            src="https://res.cloudinary.com/dsswjmlin/image/upload/v1694433423/portfolio%20abbu/awards/WhatsApp_Image_2023-09-11_at_5.10.19_PM_1_diizsf.jpg"
+            loading="lazy" alt="">
         </div>
-    </section>
-  
-      
-     <!-- about section start -->
-    <section class="about" id="about">
-        <div class="max-width">
-            <h2 class="title">About</h2>
-            <div class="about-content">
-                <div class="column left">
-                    <img src="assets/aboutbg.jpg" alt="">
-                </div>
-                <div class="column right">
-                    <div class="text">Hello, We Are Avengers,</div>
-                    <p>the Avengers, American comic strip superhero team whose frequently changing roster often included some of the most popular characters in the Marvel Comics universe. Billed as “Earth’s mightiest super-heroes,” the team was created by writer Stan Lee and artist Jack Kirby, and it debuted in The Avengers no. 1 (September 1963).</p>
-                    <a href="https://www.britannica.com/topic/the-Avengers-superhero-team" target=" ">Know More</a>
-                </div>
-            </div>
+        <div class="column right">
+          <div class="text">Hello, Let me tell you a bit about myself,</div>
+          <p> I come from humble beginnings, born into a middle-class family. Since 2001, I've dedicated my life to
+            serving humanity, especially during times of natural calamities such as building collapses and floods. My
+            journey as a social worker has been marked by unwavering commitment and countless acts of heroism.</p>
+          <a href="" target=" ">Download Resume</a>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-     
 
-         <!-- Service section start -->
-    <section class="Avengers" id="Avengers">
-        <div class="max-width">
-            <h2 class="title" style="padding-bottom: 50px;">Avengers</h2>
-            <div class="carousel owl-carousel">
-                <div class="card">
-                    <div class="box">
-                        <img src="assets/Iron Man.jpg" alt="">
-                        <div class="text">Iron Man</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                </div>
 
-                <div class="card">
-                    <div class="box">
-                        <img src="assets/Thor 2.jpg" alt="">
-                        <div class="text">Thor</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="box">
-                        <img src="assets/Hulk.jpg" alt="">
-                        <div class="text">Hulk</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                </div>
-                
-                <div class="card">
-                    <div class="box">
-                        <img src="assets/Doctor Strange.jpg" alt="">
-                        <div class="text">Doctor Strange</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="box">
-                        <img src="assets/Loki.jpg" alt="">
-                        <div class="text">Loki</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="box">
-                        <img src="assets/Spider man home Coming.jpg" alt="">
-                        <div class="text">Spider man</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="box">
-                        <img src="assets/Wanda.jpg" alt="">
-                        <div class="text">Wanda</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="box">
-                        <img src="assets/Black Widow.jpg" alt="">
-                        <div class="text">Black Widow</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                </div>
-
-            </div>
+  <!-- Service section start -->
+  <!-- Avengers section start -->
+  <section class="Avengers" id="Avengers">
+    <div class="max-width">
+      <h2 class="title" style="padding-bottom: 50px;">Recent Achievements</h2>
+      <div class="carousel owl-carousel">
+        <div class="card">
+          <div class="box">
+            <img src="https://res.cloudinary.com/dsswjmlin/image/upload/v1694428975/portfolio%20abbu/img7_jpvgb7.jpg"
+              loading="lazy" alt="Achievement 1">
+            <div class="text">Best Civil Defence Demonstrator Certificate </div>
+            <p>Received Two time in a row Recognized for outstanding service in civil defence.</p>
+          </div>
         </div>
-    </section>
+
+        <div class="card">
+          <div class="box">
+            <img
+              src="https://res.cloudinary.com/dsswjmlin/image/upload/v1694433228/portfolio%20abbu/awards/WhatsApp_Image_2023-09-11_at_4.46.01_PM_lz9bld.jpg"
+              loading="lazy" alt="Achievement 3">
+            <div class="text">Best Volunteer of Civil Defence – 1998 - 2003 </div>
+            <p>Honored as the best volunteer in civil defence from 1998 to 2003.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="box">
+            <img
+              src="https://res.cloudinary.com/dsswjmlin/image/upload/v1694433227/portfolio%20abbu/awards/WhatsApp_Image_2023-09-11_at_4.45.59_PM_ekvyfn.jpg"
+              loading="lazy" alt="Achievement 4">
+            <div class="text">Best Volunteer on Anniversary of Civil Defence – 14/12/2003</div>
+            <p>Recognized as the top volunteer on the anniversary of civil defence in 2003.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="box">
+            <img
+              src="https://res.cloudinary.com/dsswjmlin/image/upload/v1694433227/portfolio%20abbu/awards/WhatsApp_Image_2023-09-11_at_4.46.01_PM_1_fstamp.jpg"
+              loading="lazy" alt="Achievement 5">
+            <div class="text">Appreciation Letter for Flood Rescue – 26/07/2005</div>
+            <p>Received an appreciation letter for heroic flood rescue efforts.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="box">
+            <img
+              src="https://res.cloudinary.com/dsswjmlin/image/upload/v1694433409/portfolio%20abbu/awards/WhatsApp_Image_2023-09-11_at_4.46.02_PM_a1euyq.jpg"
+              loading="lazy" alt="Achievement 6">
+            <div class="text">Certificate from Yashada TOT in Team Operation – 06/05/2007</div>
+            <p>Awarded a certificate for team operations from Yashada TOT.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="box">
+            <img
+              src="https://res.cloudinary.com/dsswjmlin/image/upload/v1694433410/portfolio%20abbu/awards/WhatsApp_Image_2023-09-11_at_4.46.04_PM_p2p7xv.jpg"
+              loading="lazy" alt="Achievement 7">
+            <div class="text">Certificate from NDRF Special Training on DM – 21/12/2013</div>
+            <p>Completed specialized training in disaster management with NDRF.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="box">
+            <img
+              src="https://res.cloudinary.com/dsswjmlin/image/upload/v1694433227/portfolio%20abbu/awards/WhatsApp_Image_2023-09-11_at_4.46.00_PM_x4ergo.jpg"
+              loading="lazy" alt="Achievement 8">
+            <div class="text">Certificate of Blood Donation Appreciation - 2013</div>
+            <p>Appreciated for contributing to blood donation initiatives in 2013.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="box">
+            <img
+              src="https://res.cloudinary.com/dsswjmlin/image/upload/v1694433227/portfolio%20abbu/awards/WhatsApp_Image_2023-09-11_at_4.45.59_PM_ekvyfn.jpg"
+              loading="lazy" alt="Achievement 9">
+            <div class="text">Best Volunteer on 67th Anniversary of Civil Defence – 21/12/2013</div>
+            <p>Recognized as the top volunteer on the 67th anniversary of civil defence.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="box">
+            <img
+              src="https://res.cloudinary.com/dsswjmlin/image/upload/v1694433420/portfolio%20abbu/awards/WhatsApp_Image_2023-09-11_at_5.09.55_PM_o9gny5.jpg"
+              loading="lazy" alt="Achievement 10">
+            <div class="text">Certificate from Shikalgar Jamat Trust - 14/02/2014</div>
+            <p>Received a certificate from Shikalgar Jamat Trust for exceptional service.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="box">
+            <img
+              src="https://res.cloudinary.com/dsswjmlin/image/upload/v1694433414/portfolio%20abbu/awards/WhatsApp_Image_2023-09-11_at_4.46.56_PM_s7p4vg.jpg"
+              loading="lazy" alt="Achievement 11">
+            <div class="text">Certificate from Shikalgar Yuva Trust - 19/01/2018</div>
+            <p>Awarded a certificate from Shikalgar Yuva Trust for contributions.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="box">
+            <img
+              src="https://res.cloudinary.com/dsswjmlin/image/upload/v1694433412/portfolio%20abbu/awards/WhatsApp_Image_2023-09-11_at_4.46.06_PM_byzdvc.jpg"
+              loading="lazy" alt="Achievement 12">
+            <div class="text">Certificate from Shikalgar Jamat Trust - 26/08/2019</div>
+            <p>Recognized with a certificate from Shikalgar Jamat Trust for continued dedication.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="box">
+            <img
+              src="https://res.cloudinary.com/dsswjmlin/image/upload/v1694433413/portfolio%20abbu/awards/WhatsApp_Image_2023-09-11_at_4.46.07_PM_spvhbj.jpg"
+              loading="lazy" alt="Achievement 13">
+            <div class="text">Certificate from Fortis for Appreciation - 09/08/2019</div>
+            <p>Appreciated by Fortis for outstanding contributions.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="box">
+            <img
+              src="https://res.cloudinary.com/dsswjmlin/image/upload/v1694433410/portfolio%20abbu/awards/WhatsApp_Image_2023-09-11_at_4.46.04_PM_1_nlkctv.jpg"
+              loading="lazy" alt="Achievement 14">
+            <div class="text">Appreciation Certificate from DMARF - 25/08/2019</div>
+            <p>Received an appreciation certificate from DMARF for exceptional service.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="box">
+            <img
+              src="https://res.cloudinary.com/dsswjmlin/image/upload/v1694433411/portfolio%20abbu/awards/WhatsApp_Image_2023-09-11_at_4.46.05_PM_vbjfvc.jpg"
+              loading="lazy" alt="Achievement 15">
+            <div class="text">Safe India Hero Plus Award - 28/08/2019</div>
+            <p>Honored with the Safe India Hero Plus Award for contributions to safety.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="box">
+            <img
+              src="https://res.cloudinary.com/dsswjmlin/image/upload/v1694433422/portfolio%20abbu/awards/WhatsApp_Image_2023-09-11_at_5.10.18_PM_1_l9btah.jpg"
+              loading="lazy" alt="Achievement 16">
+            <div class="text">Safe India Corona Warrior- Covid-19 - 2020</div>
+            <p>Recognized as a COVID-19 warrior for dedicated service during the pandemic.</p>
+          </div>
+        </div>
+
+        <!-- Add more achievement cards here -->
+
+      </div>
+    </div>
+  </section>
 
 
 
-        <!-- movies section start -->
-   <section class="movies" id="movies">
+  <!-- movies section start -->
+  <section class="movies" id="movies">
     <div class="title reveal">
-      <h2 class="section-title"><b style="color: white;">Movie   Posters</b></h2>
+      <h2 class="section-title"><b style="color: white;">Image Gallery</b></h2>
     </div>
     <div class="content">
       <div class="card reveal">
+
         <div class="card-img">
-          <img src="assets/posters/The avengers 2012.jpg" alt="The avengers 2012">
+          <img
+            src="https://res.cloudinary.com/dsswjmlin/image/upload/v1694433801/portfolio%20abbu/Kolhapur/WhatsApp_Image_2023-09-11_at_5.09.58_PM_lczvg7.jpg"
+            loading="lazy" alt="bhiwandi incident">
+        </div>
+      </div>
+      <div class="card reveal">
+
+        <div class="card-img">
+          <img src="https://res.cloudinary.com/dsswjmlin/image/upload/v1694428975/portfolio%20abbu/img7_jpvgb7.jpg"
+            loading="lazy" alt="bhiwandi incident">
         </div>
       </div>
       <div class="card reveal">
         <div class="card-img">
-          <img src="assets/posters/The avengers infinity war.jpeg" alt="avengers infinity war">
+          <img
+            src="https://res.cloudinary.com/dsswjmlin/image/upload/v1694433490/portfolio%20abbu/Kolhapur/WhatsApp_Image_2023-09-11_at_4.47.08_PM_1_nkgqm6.jpg"
+            loading="lazy" alt="bhiwandi incident">
         </div>
       </div>
       <div class="card reveal">
         <div class="card-img">
-          <img src="assets/posters/the Avengers endgame.jpg" alt="endgame">
+          <img src="https://res.cloudinary.com/dsswjmlin/image/upload/v1694428974/portfolio%20abbu/img12_jhuvmu.jpg"
+            loading="lazy" alt="bhiwandi incident">
         </div>
       </div>
       <div class="card reveal">
         <div class="card-img">
-          <img src="assets/posters/marvelstudiosassembled.jpeg" alt="assembled">
+          <img src="https://res.cloudinary.com/dsswjmlin/image/upload/v1694428972/portfolio%20abbu/img9_lulkop.jpg"
+            loading="lazy" alt="bhiwandi incident">
         </div>
       </div>
       <div class="card reveal">
         <div class="card-img">
-          <img src="assets/posters/spiderman poster.jpg" alt="spiderman poster">
+          <img src="https://res.cloudinary.com/dsswjmlin/image/upload/v1694428958/portfolio%20abbu/Bg_image_b1jmgo.jpg"
+            loading="lazy" alt="bhiwandi incident">
         </div>
       </div>
       <div class="card reveal">
         <div class="card-img">
-          <img src="assets/posters/guardians of the galaxy.jpg" alt="Wanda">
+          <img src="https://res.cloudinary.com/dsswjmlin/image/upload/v1694428973/portfolio%20abbu/img11_dnaknk.jpg"
+            loading="lazy" alt="bhiwandi incident">
+        </div>
+      </div>
+      <div class="card reveal">
+        <div class="card-img">
+          <img
+            src="https://res.cloudinary.com/dsswjmlin/image/upload/v1694433417/portfolio%20abbu/awards/WhatsApp_Image_2023-09-11_at_4.47.02_PM_rfi6ac.jpg"
+            loading="lazy" alt="bhiwandi incident">
         </div>
       </div>
 
     </div>
- 
-            <!-- See All Btn start -->
-               <center>
 
-        <a href='gallery.html' target='_self'>
-          <button class="button" style="vertical-align:middle"><span>See All</span></button>
-            </a>
-               </center>
-      
-            </section>
+    <!-- See All Btn start -->
+    <center>
+
+      <a href='gallery.html' target='_self'>
+        <button class="button" style="vertical-align:middle"><span>See All</span></button>
+      </a>
+    </center>
+
+  </section>
 
 
-            <br><br>
+  <br><br>
 
-            <!-- Review Tab section start -->
-             
-              <div class="wrapper">
-              <div class="box">
-                <i class="fas fa-quote-left quote"></i>
-                <p>Lorem aliasry ipsum dolor sits ametans, consectetur adipisicing elitits. Expedita reiciendis itaque placeat thuratu, quasi yiuos repellendus repudiandae deleniti ideas fuga molestiae, alias.</p>
-                <div class="content">
-                  <div class="info">
-                    <div class="name">Name Goes Here</div>
-                    <div class="job">job Goes Here</div>
-                    <div class="stars">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                    </div>
-                  </div>
-                  <div class="image">
-                    <img src="assets/favicon.png" alt="reviewlogo1">
-                  </div>
-                </div>
-              </div>
-              <div class="box">
-                <i class="fas fa-quote-left quote"></i>
-                <p>Lorem aliasry ipsum dolor sits ametans, consectetur adipisicing elitits. Expedita reiciendis itaque placeat thuratu, quasi yiuos repellendus repudiandae deleniti ideas fuga molestiae, alias.</p>
-                <div class="content">
-                  <div class="info">
-                    <div class="name">Name Goes Here</div>
-                    <div class="job">job Goes Here</div>
-                    <div class="stars">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="far fa-star"></i>
-                    </div>
-                  </div>
-                  <div class="image">
-                    <img src="assets/favicon.png" alt="reviewlogo2">
-                  </div>
-                </div>
-              </div>
-              <div class="box">
-                <i class="fas fa-quote-left  quote"></i>
-                <p>Lorem aliasry ipsum dolor sits ametans, consectetur adipisicing elitits. Expedita reiciendis itaque placeat thuratu, quasi yiuos repellendus repudiandae deleniti ideas fuga molestiae, alias.</p>
-                <div class="content">
-                  <div class="info">
-                    <div class="name">Name Goes Here</div>
-                    <div class="job">job Goes Here</div>
-                    <div class="stars">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                    </div>
-                  </div>
-                  <div class="image">
-                    <img src="assets/favicon.png" alt="reviewlogo3">
-                  </div>
-                </div>
-              </div>
-            </div>
+  <!-- Review Tab section start -->
 
-            
+  <div class="wrapper">
+    <div class="box">
+      <i class="fas fa-quote-left quote"></i>
+      <p>Ayub Shikalgar aka bablu is truly exceptional in his field. His dedication and expertise in firefighting have left a lasting impression on me. He goes above and beyond to ensure the safety of others and is a true hero in every sense.</p>
+      <div class="content">
+        <div class="info">
+          <div class="name">Rupesh Nimbalkar</div>
+          <div class="job">Firefighter</div>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+        </div>
+        <div class="image">
+          <img src="assets/favicon.png" alt="reviewlogo1">
+        </div>
+      </div>
+    </div>
+    
+    <div class="box">
+      <i class="fas fa-quote-left quote"></i>
+      <p>bablu is an outstanding firefighter who consistently delivers top-notch performance. His courage and commitment to saving lives are truly commendable. I'm grateful for his service and dedication.</p>
+      <div class="content">
+        <div class="info">
+          <div class="name">Bimal Nathwani</div>
+          <div class="job">Civil Defence</div>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+        </div>
+        <div class="image">
+          <img src="assets/favicon.png" alt="reviewlogo2">
+        </div>
+      </div>
+    </div>
+    
+    <div class="box">
+      <i class="fas fa-quote-left quote"></i>
+      <p>Ayub is an exceptional firefighter who always puts others' safety first. His quick thinking and bravery under pressure make him a valuable asset to any firefighting team. I'm impressed by his dedication to the job.</p>
+      <div class="content">
+        <div class="info">
+          <div class="name">Essaki Pandi</div>
+          <div class="job">Firefighter</div>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+        </div>
+        <div class="image">
+          <img src="assets/favicon.png" alt="reviewlogo3">
+        </div>
+      </div>
+    </div>
+    
+  </div>
 
-                 <!-- Contact section start -->
 
-                 <section class="contact" id="contact">
-                    <div class="title reveal">
-                      <h2 class="section-title">Contact Us</h2>
-                    </div>
-                    <div class="content">
-                      <div class="row">
-                        <div class="card reveal">
-                          <div class="contact-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                          </div>
-                          <div class="info">
-                            <h3>Address</h3>
-                            <span>Address Goes Here</span>
-                          </div>
-                        </div>
-                        <div class="card reveal">
-                          <div class="contact-icon">
-                            <i class="fas fa-phone"></i>
-                          </div>
-                          <div class="info">
-                            <h3>Phone</h3>
-                            <span>+00 0000 000 000</span><br>
-                            <span>+00 0000 000 000</span>
-              
-                          </div>
-                        </div>
-                        <div class="card reveal">
-                          <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
-                          </div>
-                          <div class="info">
-                            <h3>Email Address</h3>
-                            <span>abc@gmail.com </span>
-                          </div>
-                        </div>
-                      </div>     
-            
-       <!-- Footer section start -->
-       <footer class="sticky-footer">
 
-        <span>Powered By <a href="#home">Avengers</a>  <br><span class="far fa-copyright"></span> 2022 All rights reserved.</span>
-  
-       <ul class="icons">
-           <li><a href="#home"target=" "><span class="fab fa-facebook-f"></span></a></li>
-           <li><a href="#home"target=" "><span class="fab fa-instagram"></span></a></li>
-           <li><a href="#home"target=" "><span class="fab fa-youtube"></span></a></li>
+  <!-- Contact section start -->
+
+  <section class="contact" id="contact">
+    <div class="title reveal">
+      <h2 class="section-title">Contact Us</h2>
+    </div>
+    <div class="content">
+      <div class="row">
+        <div class="card reveal">
+          <div class="contact-icon">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <div class="info">
+            <h3>Address</h3>
+            <span>5th flr,Marathawada CHS , Near Metro Mall ,Bhandup - 078</span>
+          </div>
+        </div>
+        <div class="card reveal">
+          <div class="contact-icon">
+            <i class="fas fa-phone"></i>
+          </div>
+          <div class="info">
+            <h3>Phone</h3>
+            <span>+91 9820814809</span><br>
+            <span>+91 9920579842</span>
+
+          </div>
+        </div>
+        <div class="card reveal">
+          <div class="contact-icon">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <div class="info">
+            <h3>Email Address</h3>
+            <span>ayubshikalgar786@gmail.com </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer section start -->
+      <footer class="sticky-footer">
+
+        <span>Powered By <a href="#home">Razzaq Shikalgar </a> <br><span class="far fa-copyright"></span> 2023 All
+          rights reserved.</span>
+
+        <ul class="icons">
+          <li><a href="#home" target=" "><span class="fab fa-facebook-f"></span></a></li>
+          <li><a href="#home" target=" "><span class="fab fa-instagram"></span></a></li>
+          <li><a href="#home" target=" "><span class="fab fa-youtube"></span></a></li>
         </ul>
-     
-        </footer>   
-    <script src="script.js"></script>
+
+      </footer>
+      <script src="script.js"></script>
 </body>

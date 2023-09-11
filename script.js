@@ -35,11 +35,20 @@ $(document).ready(function(){
 
     // typing text animation script
     var typed = new Typed(".typing", {
-        strings: ["Iron Man ", "Thor", "Captain America", "SpiderMan", "Loki", "Wanda", "Black Widow", "Hulk", "Doctor Strange", "Black Panther",],
+        strings: [
+            "Social Worker",
+            "Humanitarian",
+            "Community Helper",
+            "Disaster Relief Expert",
+            "Lifesaver",
+            "Dedicated Volunteer",
+            "Emergency Responder"
+        ],
         typeSpeed: 20,
         backSpeed: 50,
         loop: true
     });
+    
 
     // owl carousel script
     $('.carousel').owlCarousel({
