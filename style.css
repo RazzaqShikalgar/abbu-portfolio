@@ -219,7 +219,7 @@ section .title::after {
 /* home section styling */
 .home {
     display: flex;
-    background: url("assets/landing3.png") no-repeat center;
+    background: url("https://res.cloudinary.com/dsswjmlin/image/upload/v1694457659/portfolio%20abbu/Bhiwandi/landing3_dya1hv.png") no-repeat center;
     height: 100vh;
     color: #fff;
     min-height: 500px;
